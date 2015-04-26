@@ -44,4 +44,11 @@ describe('Bowling game', function() {
       expect(game.score()).toBe(24);
     });
   });
+
+  describe('A perfect game', function() {
+    it('Rolling a strike every time', function() {
+      rollMany(10, 12); //1 for each frame plus two bonuses in last frame
+      expect(game.score()).toBe(300);
+    });
+  });
 });
