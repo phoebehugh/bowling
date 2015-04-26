@@ -24,4 +24,24 @@ describe('Bowling game', function() {
       expect(game.score()).toBe(20);
     });
   });
+
+  describe('Game can roll a spare', function() {
+    it('Rolling a spare and then a 3 would give a current score of 16', function() {
+      game.roll(5);
+      game.roll(5);
+      game.roll(3);
+      rollMany(0, 17);
+      expect(game.score()).toBe(16);
+    });
+  });
+
+  // describe('Game can roll a strike', function() {
+  //   it('Rolling a strike and then a 3 and 5 would give a current score of 26', function() {
+  //     game.roll(10);
+  //     game.roll(3);
+  //     game.roll(5);
+  //     rollMany(0, 17);
+  //     expect(game.score()).toBe(28);
+  //   });
+  // });
 });
