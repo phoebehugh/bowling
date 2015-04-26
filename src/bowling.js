@@ -1,3 +1,0 @@
-var Bowling = function() {
-  
-};
