@@ -35,13 +35,13 @@ describe('Bowling game', function() {
     });
   });
 
-  // describe('Game can roll a strike', function() {
-  //   it('Rolling a strike and then a 3 and 5 would give a current score of 26', function() {
-  //     game.roll(10);
-  //     game.roll(3);
-  //     game.roll(5);
-  //     rollMany(0, 17);
-  //     expect(game.score()).toBe(28);
-  //   });
-  // });
+  describe('Game can roll a strike', function() {
+    it('Rolling a strike and then a 4 and 3 would give a current score of 24', function() {
+      game.roll(10);
+      game.roll(4);
+      game.roll(3);
+      rollMany(0, 16);
+      expect(game.score()).toBe(24);
+    });
+  });
 });
