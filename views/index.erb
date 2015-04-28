@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="lib/jquery.min.js"></script>
-  <script src="src/game.js"></script>
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/game.js"></script>
+  <script src='javascripts/interface.js'></script>
   <title>Bowling Game</title>
 </head>
 <body>
@@ -12,6 +13,7 @@
   <div id='game'><span id='bowling'>Bowling Game</span></div>
 
     <h1>Score</h1>
+    <button id="btn0"> 0 </button>
     <button id="btn1"> 1 </button>
     <button id="btn2"> 2 </button>
     <button id="btn3"> 3 </button>
@@ -41,27 +43,27 @@
       </tr>
       <tr>
         <th scope="row">Roll</th>
-        <td class="box1">0</td>
-        <td class="box2">0</td>
-        <td class="box3">0</td>
-        <td class="box4">0</td>
-        <td class="box5">0</td>
-        <td class="box6">0</td>
-        <td class="box7">0</td>
-        <td class="box8">0</td>
-        <td class="box9">0</td>
-        <td class="box10">0</td>
-        <td class="box11">0</td>
-        <td class="box12">0</td>
-        <td class="box13">0</td>
-        <td class="box14">0</td>
-        <td class="box15">0</td>
-        <td class="box16">0</td>
-        <td class="box17">0</td>
-        <td class="box18">0</td>
-        <td class="box19">0</td>
-        <td class="box20">0</td>
-        <td class="box21">0</td>
+        <td id="box1">0</td>
+        <td id="box2">0</td>
+        <td id="box3">0</td>
+        <td id="box4">0</td>
+        <td id="box5">0</td>
+        <td id="box6">0</td>
+        <td id="box7">0</td>
+        <td id="box8">0</td>
+        <td id="box9">0</td>
+        <td id="box10">0</td>
+        <td id="box11">0</td>
+        <td id="box12">0</td>
+        <td id="box13">0</td>
+        <td id="box14">0</td>
+        <td id="box15">0</td>
+        <td id="box16">0</td>
+        <td id="box17">0</td>
+        <td id="box18">0</td>
+        <td id="box19">0</td>
+        <td id="box20">0</td>
+        <td id="box21">0</td>
       </tr>
       <tr>
         <th scope="row">Score</th>
